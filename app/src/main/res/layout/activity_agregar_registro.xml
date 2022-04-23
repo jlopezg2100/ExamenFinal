@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarRegistroActivity">
+
+    <!-- ImageView: Imagen Perfil-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_photo_black"
+        app:civ_border_color="@color/colorGray1"
+        app:civ_border_overlay="true"
+        app:civ_border_width="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- EditText: Nombre de Usuario-->
+    <EditText
+        android:id="@+id/txtdescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileIv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="Descripcion del medicamento"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <!-- EditText: Telefono de Usuario-->
+    <EditText
+        android:id="@+id/txtcantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdescrip"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="Cantidad"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <!-- EditText: Email de Usuario-->
+
+    <!-- EditText: DOB de Usuario-->
+
+    <!-- EditText: Bio Info de Usuario-->
+
+    <!-- FAB: Agregar Registro-->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_done_white" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcantidad"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:text="Tiempo"
+        android:textSize="18sp"
+        />
+
+    <Spinner
+        android:id="@+id/spintiempo"
+        android:layout_width="349dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:entries="@array/Opciones"
+        android:prompt="@string/Opciones_prompt"
+        android:spinnerMode="dialog"
+
+        />
+
+    <EditText
+        android:id="@+id/txtperiocidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spintiempo"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/shape_rectangle"
+        android:hint="Periocidad"
+        android:inputType="date"
+        android:padding="10dp" />
+
+
+</RelativeLayout>

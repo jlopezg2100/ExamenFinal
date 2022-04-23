@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Registro de Medicamentos</string>
+
+    <string-array name="Opciones">
+        <item>Horas</item>
+        <item>Diarias</item>
+    </string-array>
+    <string name="Opciones_prompt">Seleccione</string>
+
+</resources>
+
